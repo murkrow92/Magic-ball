@@ -41,8 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="askButtonPressed" destination="ArM-eQ-2CA" id="sBs-x0-Ygf"/>
-                        <outlet property="imageView" destination="xYE-V8-T6u" id="O9f-wp-AD7"/>
+                        <outlet property="imageView" destination="xYE-V8-T6u" id="jG5-5T-iAV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
