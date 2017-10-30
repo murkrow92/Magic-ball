@@ -9,8 +9,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let index = Int(arc4random_uniform(4))
-        imageView.image = UIImage(named: ARRAY_IMAGES[index])
+        newBallImage()
     }
 
 
@@ -19,5 +18,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func askButtonPressed(_ sender: UIButton) {
+        newBallImage()
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        super.motionEnded(motion, with: event)
+        newBallImage()
+    }
+
+    private func newBallImage() {
+        let index = Int(arc4random_uniform(4))
+        imageView.image = UIImage(named: ARRAY_IMAGES[index])
     }
 }
